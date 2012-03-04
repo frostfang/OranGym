@@ -23,7 +23,7 @@ namespace Site.Tests.Controllers
 
             // Assert
             ViewDataDictionary viewData = result.ViewData;
-            Assert.AreEqual("Welcome to ASP.NET MVC!", viewData["Message"]);
+            Assert.AreEqual("Testing for GIT", viewData["Message"]);
         }
 
         [TestMethod]
