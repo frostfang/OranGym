@@ -1,79 +1,11 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
-<!DOCTYPE HTML>
-<html manifest="" lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <title>OranGym</title>
-    <style type="text/css">
-        /**
-         * Example of an initial loading indicator.
-         * It is recommended to keep this as minimal as possible to provide instant feedback
-         * while other resources are still being loaded for the first time
-         */
-        html, body {
-            height: 100%;
-        }
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+	Index
+</asp:Content>
 
-        #appLoadingIndicator {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-top: -10px;
-            margin-left: -50px;
-            width: 100px;
-            height: 20px;
-        }
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-        #appLoadingIndicator > * {
-            background-color: #FFFFFF;
-            float: left;
-            height: 20px;
-            margin-left: 11px;
-            width: 20px;
-            -webkit-animation-name: appLoadingIndicator;
-            -webkit-border-radius: 13px;
-            -webkit-animation-duration: 0.8s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: linear;
-            opacity: 0.3
-        }
+    <h2>Index</h2>
 
-        #appLoadingIndicator > :nth-child(1) {
-            -webkit-animation-delay: 0.18s;
-        }
-
-        #appLoadingIndicator > :nth-child(2) {
-            -webkit-animation-delay: 0.42s;
-        }
-
-        #appLoadingIndicator > :nth-child(3) {
-            -webkit-animation-delay: 0.54s;
-        }
-
-        @-webkit-keyframes appLoadingIndicator{
-            0% {
-                opacity: 0.3
-            }
-
-            50% {
-                opacity: 1;
-                background-color:#1985D0
-            }
-
-            100% {
-                opacity:0.3
-            }
-        }
-    </style>
-    <script id="microloader" type="text/javascript" src="sdk/microloader/development.js"></script>
-</head>
-<body>
-    <div id="appLoadingIndicator">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</body>
-</html>
-
+</asp:Content>
